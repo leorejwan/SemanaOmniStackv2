@@ -13,6 +13,4 @@ function App() {
   );
 }
 
-//TESTE
-
 export default App;

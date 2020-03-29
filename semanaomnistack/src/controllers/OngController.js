@@ -13,7 +13,6 @@ module.exports = {
         const { name, email, whatsapp, city, uf } = request.body;
 
         // console.log(data);
-        // TESTE
     
         const id = crypto.randomBytes(4).toString('HEX');//numeros aleatorios  
     
