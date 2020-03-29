@@ -1,0 +1,41 @@
+routes anteriormente
+
+const express = require('express');
+
+const routes = express.Router();
+
+// routes.post('/users', (request, response) => { //users é a rota //request: guarda as variaveis. response: guarda a resposta
+//     const paramsQuery = request.query; //pega as variaveis que estão depois do ? da rota
+//     const params = request.params; //pega os parâmetros que estão depois do ? da rota
+//     const body = request.body; //pega os parâmetros que estão depois do ? da rota
+  
+routes.post('/users', (request, response) => { //users é a rota //request: guarda as variaveis. response: guarda a resposta
+    const paramsQuery = request.query; //pega as variaveis que estão depois do ? da rota
+    const params = request.params; //pega os parâmetros que estão depois do ? da rota
+    const body = request.body; //pega os parâmetros que estão depois do ? da rota
+
+    
+    console.log("query:");
+    console.log(paramsQuery);
+    console.log("params:");
+    console.log(params);
+    console.log("body:");
+    console.log(body);
+    
+        return response.json({
+            evento: 'Semana OmniStack',
+            aluno: 'kcndsknsdk'
+        });
+    });
+    
+module.exports = routes; //exportar rota
+
+
+// const routes = express.routes('./routes');
+
+// const app = express();
+
+// app.use(express.json());
+// app.use(routes);
+
+// app.listen(3333);

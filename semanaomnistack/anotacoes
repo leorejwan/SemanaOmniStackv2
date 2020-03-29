@@ -1,0 +1,36 @@
+AULA 1
+
+Istalar node.js (chocolatey) = https://nodejs.org/en/download/package-manager/#windows
+
+instalar VSCode = https://code.visualstudio.com/
+
+npm install nodemon -D
+//-D = Desenvolvimento
+
+//remover essa linha do package.json
+"test": "echo \"Error: no test specified\" && exit 1"
+//E substituir por:
+"start": "nodemon index.js"
+//escrever npm start no TERMINAL
+
+ENTIDADES
+ONG
+caso (incident)
+
+FUNCIONALIDADES
+login
+logout
+cadastro de ONG
+Cadastrar novos casos
+Deletar casos
+listar casos específicos de uma ONG
+Listar todos os casos
+Contato com ONG (email/whatsapp)
+
+-----------
+Migrations
+
+histórico do que foi criado e pode criar automáticamente o que foi criado
+
+SEMPRE LEMBRAR DE SALVAR A PAGINA
+
